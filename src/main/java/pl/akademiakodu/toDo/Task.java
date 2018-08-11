@@ -8,6 +8,14 @@ public class Task {
 
     private boolean isFinished;
 
+    @Override
+    public String toString() {
+        return "Task{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", isFinished=" + isFinished +
+                '}';
+    }
 
     public Task(String name, String description) {
         this.name = name;
